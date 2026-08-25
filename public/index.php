@@ -17,10 +17,11 @@ require __DIR__.'/../vendor/autoload.php';
 /** @var Application $app */
 $app = require_once __DIR__.'/../bootstrap/app.php';
 
-// On shared hosting, this file may be served from a document root that
-// differs from Laravel's default `public/` folder — tell the app where
-// its real public path is so asset(), Vite, and Storage::url() resolve
-// correctly. Harmless no-op in a standard local setup.
-$app->usePublicPath(__DIR__);
+// On shared hosting, this file may be required from a stub in a document
+// root that differs from Laravel's default `public/` folder — the stub
+// sets LARAVEL_PUBLIC_PATH before requiring this file so asset(), Vite,
+// and Storage::url() resolve correctly. Harmless no-op in a standard
+// local setup.
+$app->usePublicPath($_SERVER['LARAVEL_PUBLIC_PATH'] ?? __DIR__);
 
 $app->handleRequest(Request::capture());
