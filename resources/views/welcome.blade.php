@@ -8,7 +8,7 @@
 @endphp
 <x-layouts.public
     title="Beranda"
-    :description="$orgTagline.' — '.$orgDescription"
+    :description="$orgTagline.' — '.$orgDescription.' '.$hashtagTagline"
 >
     <script type="application/ld+json">
         {!! json_encode([
