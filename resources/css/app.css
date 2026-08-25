@@ -1,0 +1,98 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme {
+    --font-sans: 'Red Hat Display', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-display: 'Baloo 2', ui-sans-serif, system-ui, sans-serif;
+    --font-subheading: 'Nunito', ui-sans-serif, system-ui, sans-serif;
+
+    /* SSIC official brand kit 2026 — Warna Profil: Cokelat #3D1C11, Merah #BB1A34, Biru #2474D2, Putih #F9F9F9 */
+    --color-primary-50: #f5f7fa;
+    --color-primary-100: #e6edf5;
+    --color-primary-200: #c1d4ec;
+    --color-primary-300: #8db4e3;
+    --color-primary-400: #5493de;
+    --color-primary-500: #2578da;
+    --color-primary-600: #2474d2; /* Biru — brand blue */
+    --color-primary-700: #1d5ca6;
+    --color-primary-800: #194981;
+    --color-primary-900: #15365d;
+    --color-primary-950: #0f253e;
+
+    --color-secondary-50: #faf4f5;
+    --color-secondary-100: #f5e5e8;
+    --color-secondary-200: #edbfc7;
+    --color-secondary-300: #e58a99;
+    --color-secondary-400: #e25067;
+    --color-secondary-500: #e01f3e;
+    --color-secondary-600: #bb1a34; /* Merah — brand red */
+    --color-secondary-700: #8e1428;
+    --color-secondary-800: #68111f;
+    --color-secondary-900: #440d16;
+    --color-secondary-950: #25080d;
+
+    --color-cokelat-50: #f9f6f6;
+    --color-cokelat-100: #f2ebe8;
+    --color-cokelat-200: #e5cfc7;
+    --color-cokelat-300: #d8a797;
+    --color-cokelat-400: #ca795e;
+    --color-cokelat-500: #ac5234;
+    --color-cokelat-600: #803b24;
+    --color-cokelat-700: #602c1b;
+    --color-cokelat-800: #492114;
+    --color-cokelat-900: #3d1c11; /* Cokelat — brand dark brown ink */
+    --color-cokelat-950: #28130c;
+
+    --color-accent-50: var(--color-fuchsia-50);
+    --color-accent-100: var(--color-fuchsia-100);
+    --color-accent-200: var(--color-fuchsia-200);
+    --color-accent-300: var(--color-fuchsia-300);
+    --color-accent-400: var(--color-fuchsia-400);
+    --color-accent-500: var(--color-fuchsia-500);
+    --color-accent-600: var(--color-fuchsia-600);
+    --color-accent-700: var(--color-fuchsia-700);
+    --color-accent-800: var(--color-fuchsia-800);
+    --color-accent-900: var(--color-fuchsia-900);
+
+    --color-sunny-50: var(--color-amber-50);
+    --color-sunny-100: var(--color-amber-100);
+    --color-sunny-200: var(--color-amber-200);
+    --color-sunny-300: var(--color-amber-300);
+    --color-sunny-400: var(--color-amber-400);
+    --color-sunny-500: var(--color-amber-500);
+    --color-sunny-600: var(--color-amber-600);
+
+    --color-grape-400: var(--color-violet-400);
+    --color-grape-500: var(--color-violet-500);
+    --color-grape-600: var(--color-violet-600);
+
+    --shadow-playful: 0 8px 24px -8px rgb(0 0 0 / 0.18);
+    --shadow-playful-lg: 0 20px 40px -12px rgb(0 0 0 / 0.22);
+}
+
+@layer base {
+    body {
+        @apply font-sans text-slate-700 bg-slate-50;
+    }
+    h1, h2, h3, h4, .font-display {
+        font-family: var(--font-display);
+    }
+}
+
+@layer utilities {
+    .scrollbar-thin::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+    .scrollbar-thin::-webkit-scrollbar-thumb {
+        @apply bg-slate-300 rounded-full;
+    }
+}
+
+/* Alpine.js: hide un-initialized elements until Alpine loads */
+[x-cloak] {
+    display: none !important;
+}
