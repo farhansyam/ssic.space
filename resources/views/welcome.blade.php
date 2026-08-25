@@ -9,6 +9,7 @@
 <x-layouts.public
     title="Beranda"
     :description="$orgTagline.' — '.$orgDescription.' '.$hashtagTagline"
+    :image="$heroImage ?: $orgLogo"
 >
     <script type="application/ld+json">
         {!! json_encode([
