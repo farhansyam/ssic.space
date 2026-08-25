@@ -15,7 +15,7 @@ class TestMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Email Test — '.site_setting('org_name', 'SSIC'),
+            subject: 'Email Test — '.site_setting('org_name', 'SSIC Space'),
         );
     }
 

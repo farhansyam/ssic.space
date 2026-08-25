@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    @php $orgName = site_setting('org_name', 'SSIC'); $orgTagline = site_setting('org_tagline', 'Synergy Social Impact Community'); @endphp
+    @php $orgName = site_setting('org_name', 'SSIC Space'); $orgTagline = site_setting('org_tagline', 'Synergy Social Impact Community'); @endphp
     <title>{{ $title ?? $orgName }} · {{ $orgTagline }}</title>
     <meta name="robots" content="noindex, nofollow">
     @vite(['resources/css/app.css', 'resources/js/app.js'])

@@ -1,5 +1,5 @@
 @php
-    $orgName = site_setting('org_name', 'SSIC');
+    $orgName = site_setting('org_name', 'SSIC Space');
     $orgTagline = site_setting('org_tagline', 'Synergy Social Impact Community');
     $orgDescription = site_setting('org_description', 'bareng-bareng bikin dampak sosial yang nyata lewat kelas, kegiatan, dan donasi.');
     $orgLogo = site_setting('logo');

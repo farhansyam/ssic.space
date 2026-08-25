@@ -29,7 +29,7 @@
                 <div class="mt-4 space-y-4">
                     <div>
                         <label for="org_name" class="mb-1.5 block text-sm font-medium text-slate-700">Nama Organisasi</label>
-                        <input id="org_name" name="org_name" type="text" required maxlength="150" value="{{ old('org_name', site_setting('org_name', 'SSIC')) }}" class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 text-sm outline-none transition focus:border-primary-500 focus:bg-white focus:ring-4 focus:ring-primary-200">
+                        <input id="org_name" name="org_name" type="text" required maxlength="150" value="{{ old('org_name', site_setting('org_name', 'SSIC Space')) }}" class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 text-sm outline-none transition focus:border-primary-500 focus:bg-white focus:ring-4 focus:ring-primary-200">
                         @error('org_name') <p class="mt-1.5 text-xs text-rose-500">{{ $message }}</p> @enderror
                     </div>
                     <div>

@@ -20,7 +20,7 @@ class CertificateIssuedMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Sertifikat Kamu Sudah Terbit — '.site_setting('org_name', 'SSIC'),
+            subject: 'Sertifikat Kamu Sudah Terbit — '.site_setting('org_name', 'SSIC Space'),
         );
     }
 

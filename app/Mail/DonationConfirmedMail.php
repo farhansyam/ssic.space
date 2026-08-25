@@ -20,7 +20,7 @@ class DonationConfirmedMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Donasi Kamu Terkonfirmasi — '.site_setting('org_name', 'SSIC'),
+            subject: 'Donasi Kamu Terkonfirmasi — '.site_setting('org_name', 'SSIC Space'),
         );
     }
 

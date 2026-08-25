@@ -1,7 +1,7 @@
 <x-mail::message>
 # Sertifikat Kamu Sudah Terbit! 🎓
 
-Selamat, {{ $certificate->user->name }}! Sertifikat kamu untuk **{{ $certificate->certifiable->title ?? '-' }}** sudah diterbitkan oleh {{ site_setting('org_name', 'SSIC') }}.
+Selamat, {{ $certificate->user->name }}! Sertifikat kamu untuk **{{ $certificate->certifiable->title ?? '-' }}** sudah diterbitkan oleh {{ site_setting('org_name', 'SSIC Space') }}.
 
 <x-mail::table>
 | | |
@@ -23,5 +23,5 @@ Verifikasi Sertifikat
 </x-mail::button>
 
 Selamat & sukses selalu,<br>
-{{ site_setting('org_name', 'SSIC') }}
+{{ site_setting('org_name', 'SSIC Space') }}
 </x-mail::message>

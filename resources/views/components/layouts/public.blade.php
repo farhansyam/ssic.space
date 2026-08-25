@@ -1,5 +1,5 @@
 @php
-    $orgName = site_setting('org_name', 'SSIC');
+    $orgName = site_setting('org_name', 'SSIC Space');
     $orgLogo = site_setting('logo');
     $orgFavicon = site_setting('favicon');
     $themeColor = site_setting('theme_color');

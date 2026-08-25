@@ -23,7 +23,7 @@ class RegistrationConfirmedMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Pendaftaran '.$this->itemType.' Berhasil — '.site_setting('org_name', 'SSIC'),
+            subject: 'Pendaftaran '.$this->itemType.' Berhasil — '.site_setting('org_name', 'SSIC Space'),
         );
     }
 

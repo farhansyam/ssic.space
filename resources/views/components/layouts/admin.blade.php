@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ $title ?? 'Admin' }} · {{ site_setting('org_name', 'SSIC') }} Admin</title>
+    <title>{{ $title ?? 'Admin' }} · {{ site_setting('org_name', 'SSIC Space') }} Admin</title>
     <meta name="robots" content="noindex, nofollow">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
@@ -29,7 +29,7 @@
         >
             <div class="flex h-full flex-col">
                 <div class="flex items-center gap-3 px-6 py-6">
-                    @php $orgLogo = site_setting('logo'); $orgName = site_setting('org_name', 'SSIC'); @endphp
+                    @php $orgLogo = site_setting('logo'); $orgName = site_setting('org_name', 'SSIC Space'); @endphp
                     @if ($orgLogo)
                         <img src="{{ Illuminate\Support\Facades\Storage::url($orgLogo) }}" alt="{{ $orgName }}" class="h-11 w-11 rounded-full object-cover shadow-playful">
                     @else

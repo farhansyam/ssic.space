@@ -8,7 +8,7 @@ class PwaController extends Controller
 {
     public function manifest(): JsonResponse
     {
-        $orgName = site_setting('org_name', 'SSIC');
+        $orgName = site_setting('org_name', 'SSIC Space');
         $themeColor = site_setting('theme_color', '#2474D2');
 
         return response()->json([

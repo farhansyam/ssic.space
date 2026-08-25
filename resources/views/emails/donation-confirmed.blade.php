@@ -1,7 +1,7 @@
 <x-mail::message>
 # Terima Kasih, {{ $donation->donor_name }}! 💙
 
-Donasi kamu sudah **terkonfirmasi** oleh admin {{ site_setting('org_name', 'SSIC') }}.
+Donasi kamu sudah **terkonfirmasi** oleh admin {{ site_setting('org_name', 'SSIC Space') }}.
 
 <x-mail::table>
 | | |
@@ -18,5 +18,5 @@ Lihat Campaign Lainnya
 </x-mail::button>
 
 Salam hangat,<br>
-{{ site_setting('org_name', 'SSIC') }}
+{{ site_setting('org_name', 'SSIC Space') }}
 </x-mail::message>
