@@ -502,7 +502,7 @@
     @if ($partners->isNotEmpty())
         <div class="bg-white py-16">
             <div x-reveal class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-                <p class="text-center text-xs font-semibold uppercase tracking-wide text-slate-400">Didukung Oleh</p>
+                <p class="text-center text-xs font-semibold uppercase tracking-wide text-slate-400">Partner Kerjasama</p>
                 <div class="mt-8 flex flex-wrap items-center justify-center gap-x-12 gap-y-8">
                     @foreach ($partners as $partner)
                         <a href="{{ $partner->link ?? '#' }}" target="_blank" rel="noopener" class="grayscale transition-all duration-300 hover:grayscale-0" title="{{ $partner->name }}">
